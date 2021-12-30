@@ -2,7 +2,7 @@ function iniciar() {
     $tabla = ("<table border=1 id='tabla'>");
     $("#principal").append($tabla);
     buscarNombreContinente();
-    //buscarBandera($celdaArriba);
+    //buscarBandera();
 }
 
 function buscarNombreContinente() {
@@ -20,8 +20,8 @@ function buscarNombreContinente() {
     })
 
 }
-/*function buscarBandera($celdaArriba) {
-    $($celdaArriba).append("<tr> <td colspan='2'>  </td> </tr>");
+/*function buscarBandera() {
+    $().append("<tr> <td colspan='2'>  </td> </tr>");
 }*/
 function mensajecss() {
     $("#mensajeRojo").css({
