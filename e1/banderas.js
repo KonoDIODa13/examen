@@ -9,11 +9,11 @@ function buscarNombreContinente() {
     $.getJSON("paises.json").done(function (paises) {
         $.each(paises.mundo.continentes, function () {
             if ($(this)[0].Nombre === "América" || $(this)[0].Nombre === "Oceania") {
-                fila1 = ("<tr/>");
+                //fila1 = ("<tr/>");
                 $celdaArriba = ("<td><h3>" + $(this)[0].Nombre + "</h3></td>");
 
                 $("#tabla").append($celdaArriba);
-                $("#tabla").append(fila1);
+               // $("#tabla").append(fila1);
                 //$("#tabla").append("<tr> <td> uwu </td> </tr>");
             } else {
                 $mensajeRojo = ($(this)[0].Nombre + " no esta actualizado.");
